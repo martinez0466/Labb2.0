@@ -1,0 +1,13 @@
+# Ignorera alla jar-filer
+*.jar
+
+# Ignorera katalogerna 'out' och 'target'
+out/
+target/
+
+# Tillåt html-filer i target-katalogen
+!target/*.html
+
+.githooks/large-file.bin
+
+

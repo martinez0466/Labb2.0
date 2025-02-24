@@ -1,1 +1,31 @@
  This is fix2.txt
+
+git --version
+git config --global user.name "Ditt Namn"
+git config --global user.email "din.email@example.com"
+git config --global init.defaultBranch main
+git config --list
+git init
+echo "duck\nmoose\ncat" > README.md
+git add README.md
+git commit -m "Initial commit"
+git branch feature1
+git checkout feature1
+sed -i '' 's/moose/mouse/' README.md
+echo "dog" >> README.md
+git add README.md
+git commit -m "Updated animals: changed moose to mouse, added dog"
+git checkout main
+sed -i '' 's/moose/mahmut/' README.md
+git add README.md
+git commit -m "Changed moose to mahmut on main"
+git merge feature1
+git tag extinct
+git reset --hard <commit-hash>
+git checkout feature2
+echo "This is fix2.txt" > fix2.txt
+git add fix2.txt
+git commit -m "Added fix2.txt"
+git checkout main
+git cherry-pick 454bede
+
