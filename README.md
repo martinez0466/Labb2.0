@@ -1,4 +1,4 @@
-duck
-mahmut
-cat
-dog
+Duck
+Mahmut
+Cat
+Dog
